@@ -1,0 +1,13 @@
+/*------------------- Footer ----------------------------*/
+footer {
+  background-color: black;
+  color: white;
+  padding: 30px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p {
+  margin: 0 4px;
+}

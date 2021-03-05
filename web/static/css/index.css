@@ -1,0 +1,313 @@
+/*------------------- Variables ----------------------------*/
+:root {
+  --main-color: #bb7b0e ;
+}
+/*
+  #EE9A00 color naranja
+  #379700ce color verde
+*/
+/*---------------------------------------------------------*/
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+/*------------------- Linea Header ----------------------------*/
+
+.line-header {
+  background-color: var(--main-color);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.line-header h3 {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 800;
+  padding: 10px 0px;
+  color: white;
+}
+
+/*-------------------------------------------------------*/
+/*------------------- Header ----------------------------*/
+
+.fondo1 {
+  width: 100%;
+  background-image: url(../images/fondo1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.fondo1 p {
+  padding: 4% 0;
+  font-size: 330%;
+  margin: 0% 28%;
+}
+
+.fondo1 img {
+  height: 120px;
+  width: auto;
+}
+
+@media all and (max-width: 600px) {
+  .fondo1 p {
+    font-size: 250%;
+    margin: 0 15%;
+  }
+}
+
+@media all and (max-width: 360px) {
+
+  .fondo1 img {
+    height: 90px;
+  }
+}
+
+@media all and (max-width: 270px) {
+  .fondo1 p {
+    font-size: 220%;
+    margin: 0 0;
+  }
+  .fondo1 img {
+    height: 60px;
+  }
+}
+
+/*-------------------------------------------------------*/
+/*------------------- Fondo2 ----------------------------*/
+
+section.fondo2 {
+  width: 100%;
+  background-image: url("../images/pagina2-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+section.fondo2 img {
+  max-width: 400px;
+  height: auto;
+}
+
+section.fondo2 h1 {
+  font-size: 52px;
+  color: var(--main-color);
+}
+
+section.fondo2 .info img {
+  height: 75px;
+  width: auto;
+  margin-left: 0px;
+}
+
+section.fondo2 .info {
+  max-width: 650px;
+  padding-top: 60px;
+  padding-left: 80px;
+  transition: 0.5s;
+}
+
+section.fondo2 h2 {
+  font-size: 40px;
+  color: var(--main-color);
+}
+
+section.fondo2 .info .title {
+  display: flex;
+}
+
+section.fondo2 h4 {
+  font-size: 23px;
+  font-weight: 70;
+  color: white;
+}
+
+section.fondo2 .item {
+  display: flex;
+  margin: 50px 0px;
+  align-items: center;
+}
+
+section.fondo2 .item .item1 {
+  max-width: 340px;
+  margin-left: 115px;
+}
+
+section.fondo2 .item .item2 {
+  max-width: 340px;
+  margin-left: 66px;
+}
+
+section.fondo2 .item .item3 {
+  max-width: 340px;
+  margin-left: 121px;
+}
+
+section.fondo2 .item .item4 {
+  max-width: 340px;
+  margin-left: 40px;
+}
+
+section.fondo2 .form {
+  max-width: 520px;
+  padding-top: 10px;
+  padding-left: 12%;
+  text-align: center;
+  transition: 0.5s;
+  
+}
+
+section.fondo2 .form form{
+  margin-top: 40px;
+  max-width: 350px;
+  height: 500px;
+  border-radius: 30px;
+  border: var(--main-color) 7px solid;
+  background-color: transparent;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section.fondo2 .form form h3 {
+  margin: 20px 0;
+  font-size: 28px;
+}
+
+section.fondo2 .form form input {
+  width: 80%;
+  margin: 8px 0;
+  padding: 8px 10px;
+  font-size: 16px;
+  border: var(--main-color) 2px solid;
+  border-radius: 10px;
+  background-color: transparent;
+  color: white;
+}
+
+section.fondo2 .form form p {
+  margin: 10px 0;
+}
+
+section.fondo2 .form form p a {
+  text-decoration: none;
+  color: rgb(163, 199, 5);
+}
+
+section.fondo2 .form form #registrar {
+  width: 60%;
+  background-color: var(--main-color);
+}
+
+@media all and (max-width: 1260px) {
+  section.fondo2 .info {
+    padding-left: 20px;
+  }
+
+  section.fondo2 .form {
+    padding-left: 1%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  section.fondo2 .form form h3 {
+    font-size: 28px;
+  }
+}
+
+@media all and (max-width: 1060px) {
+  section.fondo2 {
+    width: 100%;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  section.fondo2 .info {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media all and (max-width: 700px) {
+  section.fondo2 h1 {
+    font-size: 35px;
+  }
+
+  section.fondo2 h2 {
+    font-size: 26px;
+  }
+
+  section.fondo2 .form form h3 {
+    margin: 20px 0;
+    font-size: 20px;
+  }
+
+  section.fondo2 h4 {
+    font-size: 18px;
+  }
+
+  section.fondo2 .item .item1 {
+    margin-left: 63px;
+  }
+
+  section.fondo2 .item .item2 {
+    margin-left: 30px;
+  }
+
+  section.fondo2 .item .item3 {
+    margin-left: 66px;
+  }
+
+  section.fondo2 .item .item4 {
+    margin-left: 15px;
+  }
+}
+
+@media all and (max-width: 400px) {
+  section.fondo2 h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  section.fondo2 .item {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  section.fondo2 .item .item1 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  section.fondo2 .item .item2 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  section.fondo2 .item .item3 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  section.fondo2 .item .item4 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*-------------------------------------------------------*/

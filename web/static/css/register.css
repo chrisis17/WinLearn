@@ -1,0 +1,81 @@
+:root {
+  --main-color: #bba10e ;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  background-image: url(../images/fondo-iniciosesion.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+main .form {
+  padding: auto;
+  text-align: center;
+  transition: 0.5s;
+  
+}
+
+main .form form{
+  margin-top: 40px;
+  max-width: 350px;
+  height: 500px;
+  border-radius: 30px;
+  border: var(--main-color) 7px solid;
+  background-color: transparent;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main h2 {
+  font-size: 40px;
+  color: var(--main-color);
+}
+
+
+main .form form h3 {
+  margin: 20px 0;
+  font-size: 28px;
+}
+
+main .form form input {
+  width: 80%;
+  margin: 8px 0;
+  padding: 8px 10px;
+  font-size: 16px;
+  border: var(--main-color) 2px solid;
+  border-radius: 10px;
+  background-color: transparent;
+  color: white;
+}
+
+main .form form p {
+  margin: 10px 0;
+}
+
+main .form form p a {
+  text-decoration: none;
+  color: rgb(163, 199, 5);
+}
+
+main .form form #registrar {
+  width: 60%;
+  background-color: var(--main-color);
+}
+
+@media all and (max-height: 576px) {
+  main {
+    height: 100%;
+  }
+}

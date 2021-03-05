@@ -1,0 +1,110 @@
+/*------------------- Nav Bar ----------------------------*/
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 4px;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul li {
+  padding: 15px 0px;
+}
+
+nav ul li.logo {
+  flex: 1;
+}
+
+nav ul li.logo img {
+  height: 80px;
+  width: auto;
+}
+
+nav ul li.item {
+  width: auto;
+  cursor: pointer;
+  position: relative;
+  margin: 0px 15px;
+  text-align: center;
+  order: 3;
+  transition: 0.3s;
+}
+
+nav ul li.item:after {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: var(--main-color);
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+nav ul li.item:hover:after {
+  opacity: 1;
+  bottom: 4px;
+}
+
+nav ul li a {
+  color: black;
+  font-size: 20px;
+  margin: 5px 20px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: .4s;
+}
+
+nav ul li:hover a {
+  color: var(--main-color);
+}
+
+nav ul li a.active {
+  color: var(--main-color);
+}
+
+nav ul li.btn-menu {
+  display: none;
+  cursor: pointer;
+}
+
+nav ul li.btn-menu img {
+  height: 35px;
+  width: auto;
+}
+
+@media all and (max-width: 1200px) {
+  nav {
+    padding: 5px 30px;
+  }
+
+  nav ul li.item {
+    width: 100%;
+    display: none;
+  }
+
+  nav ul li.item.show {
+    display: block;
+  }
+
+  nav ul li.item:hover {
+    border-radius: 8px;
+    box-shadow:inset 0 0 5px var(--main-color),
+               inset 0 0 10px var(--main-color);
+  }
+
+  nav ul li.btn-menu {
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media all and (max-width: 400px){
+  nav ul li.logo img {
+    height: 50px;
+    width: auto;
+  }
+}
