@@ -243,6 +243,10 @@ section.fondo2 .form form #registrar {
 }
 
 @media all and (max-width: 700px) {
+  section.fondo2 .info .title {
+    justify-content: center;
+  }
+
   section.fondo2 h1 {
     font-size: 35px;
   }
@@ -278,6 +282,10 @@ section.fondo2 .form form #registrar {
 }
 
 @media all and (max-width: 400px) {
+  section.fondo2 .info {
+    padding-left: 0;
+  }
+
   section.fondo2 h1 {
     font-size: 30px;
     text-align: center;

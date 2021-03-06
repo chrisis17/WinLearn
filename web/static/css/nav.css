@@ -19,6 +19,7 @@ nav ul li.logo {
 nav ul li.logo img {
   height: 80px;
   width: auto;
+  transition: 0.4s;
 }
 
 nav ul li.item {
@@ -78,6 +79,7 @@ nav ul li.btn-menu img {
 @media all and (max-width: 1200px) {
   nav {
     padding: 5px 30px;
+    transition: 0.4s;
   }
 
   nav ul li.item {
@@ -103,6 +105,25 @@ nav ul li.btn-menu img {
 }
 
 @media all and (max-width: 400px){
+  nav {
+    padding: 5px 20px;
+  }
+}
+
+@media all and (max-width: 365px){
+  nav {
+    padding: 5px 10px;
+  }
+}
+
+@media all and (max-width: 325px){
+  nav ul li.logo img {
+    height: 65px;
+    width: auto;
+  }
+}
+
+@media all and (max-width: 200px){
   nav ul li.logo img {
     height: 50px;
     width: auto;
