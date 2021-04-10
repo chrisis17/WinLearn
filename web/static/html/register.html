@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <link rel="stylesheet" href="../css/register.css">
   <title>Iniciar Sesion</title>
 </head>
@@ -16,17 +17,18 @@
       <h2>Regístrate Ahora</h2>
       <form action="">
         <h3>Registro</h3>
-        <input type="text" name="Nombre Apellido" placeholder="Nombre y Apellido" id="">
-        <input type="email" name="Correo" placeholder="Correo" id="">
-        <input type="text" name="Usuario" placeholder="Usuario" id="">
-        <input type="password" name="Contraseña" placeholder="Contraseña" id="">
+        <input type="text" name="Nombre Apellido" placeholder="Nombre y Apellido" id="name">
+        <input type="email" name="Correo" placeholder="Correo" id="email">
+        <input type="text" name="Usuario" placeholder="Usuario" id="username">
+        <input type="password" name="Contraseña" placeholder="Contraseña" id="password">
         <p>Estoy de acuerdo con los <br> <a href="#">Terminos y Condiciones</a></p>
-        <input id="registrar" type="submit" value="Registrar">
+        <input id="registrar" type="button" value="Registrar" onclick="register()">
         <p><a href="#">¿Ya tengo Cuenta?</a></p>
       </form>
     </div>
   </main>
 
+  <script src="../js/register.js"></script>
 </body>
 
 </html>

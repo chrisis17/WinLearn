@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <link rel="stylesheet" href="../css/login.css">
   <title>Iniciar Sesion</title>
 </head>
@@ -14,20 +15,22 @@
   <main>
     <div class="form">
       <h2> Iniciar Sesión</h2>
-      <form action="http://127.0.0.1:8080/login" method="post">
+      <form>
         <img src="../images/logo.png" alt="logo">
         <h3>Ingresar</h3>
-        <input type="text" name="username" placeholder="Usuario" id="">
-        <input type="password" name="password" placeholder="Contraseña" id="">
+        <input type="text" name="username" placeholder="Usuario" id="username">
+        <input type="password" name="password" placeholder="Contraseña" id="password">
         <div class="save-user">
           <input type="checkbox" id="c1" name="Guardar Usuario" />
           <p>Recuerdame</p>
         </div>
-        <input id="registrar" type="submit" value="LOGIN">
+        <input id="registrar" type="button" value="LOGIN" onclick="login()">
         <p><a href="#">¿Olvidaste tu contraseña?</a></p>
       </form>
     </div>
   </main>
+
+  <script src="../js/login.js"></script>
 
 </body>
 
